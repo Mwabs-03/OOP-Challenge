@@ -46,3 +46,22 @@ class Pet :
         # this line prints tricks , separated by a comma. 
         # If there are no tricks, it prints 'None'.
         print(f"Tricks: {', '.join(self.tricks) if self.tricks else 'None'}")
+
+
+
+#'train(trick)'to show how to teach a pet a new trick
+
+        def train(self, trick):
+               self.tricks.append(trick)  # Add the trick to the list
+        print(f"{self.name} learned a new trick: {trick}!")
+
+    # Method to show all tricks the pet has learned
+    def show_tricks(self):
+        if self.tricks:
+            print(f"{self.name} knows the following tricks: {', '.join(self.tricks)}")
+        else:
+            print(f"{self.name} doesn't know any tricks yet.")
+            
+
+
+
