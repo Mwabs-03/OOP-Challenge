@@ -53,7 +53,7 @@ class Pet :
 
         def train(self, trick):
                self.tricks.append(trick)  # Add the trick to the list
-        print(f"{self.name} learned a new trick: {trick}!")
+        print(f"{self.name} learned a new trick: {self.trick}!")
 
     # Method to show all tricks the pet has learned
     def show_tricks(self):
@@ -62,6 +62,5 @@ class Pet :
         else:
             print(f"{self.name} doesn't know any tricks yet.")
             
-
 
 
